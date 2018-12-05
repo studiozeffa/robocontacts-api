@@ -1,0 +1,45 @@
+{
+  "name": "robocontacts-api",
+  "version": "1.0.0",
+  "description": "An API that returns some dummy contacts.",
+  "main": "lib/index.js",
+  "scripts": {
+    "start": "node lib/index.js",
+    "build": "tsc",
+    "dev": "nodemon --watch 'src/**/*.ts' --exec 'ts-node' src/index.ts",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "heroku-postbuild": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/studiozeffa/robocontacts-api.git"
+  },
+  "author": "Tom Spencer <tom.spencer@studiozeffa.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/studiozeffa/robocontacts-api/issues"
+  },
+  "homepage": "https://github.com/studiozeffa/robocontacts-api#readme",
+  "dependencies": {
+    "compression": "^1.7.3",
+    "cors": "^2.8.5",
+    "express": "^4.16.4",
+    "morgan": "^1.9.1"
+  },
+  "devDependencies": {
+    "@types/compression": "0.0.36",
+    "@types/cors": "^2.8.4",
+    "@types/express": "^4.16.0",
+    "@types/morgan": "^1.7.35",
+    "@types/node": "^10.12.12",
+    "husky": "^1.2.0",
+    "lint-staged": "^8.1.0",
+    "nodemon": "^1.18.7",
+    "prettier": "^1.15.3",
+    "ts-node": "^7.0.1",
+    "tslint": "^5.11.0",
+    "tslint-config-prettier": "^1.17.0",
+    "tslint-plugin-prettier": "^2.0.1",
+    "typescript": "^3.2.1"
+  }
+}
